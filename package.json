@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
     "lint": "next lint"
   },
@@ -18,5 +18,12 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "4.9.3"
+  },
+  "devDependencies": {
+    "@heroicons/react": "^2.0.13",
+    "autoprefixer": "^10.4.13",
+    "csvtojson": "^2.0.10",
+    "postcss": "^8.4.19",
+    "tailwindcss": "^3.2.4"
   }
 }

@@ -5,12 +5,18 @@ export default function Home() {
   if (!data) return <div>Data loading failed</div>;
 
   return (
-    <div className="flex items-center justify-center ">
+    <div className="flex items-center justify-center">
       <Head>
         <title>NSW public school canteen income 2021</title>
         <meta name="description" content="NSW public school canteen income 2021" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <a className="" href="https://twitter.com/minhokim42" target="_blank" rel="noopener noreferrer">
+        <div className="fixed right-0 bottom-0 bg-indigo-500 text-white no-underline text-sm px-2 py-1 rounded-tl-xl">
+          @minhokim42
+        </div>
+      </a>
 
       <main className="max-w-xl mb-20 px-2">
         <div className="flex flex-col items-center justify-center py-3">

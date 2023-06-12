@@ -12,9 +12,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <a className="" href="https://twitter.com/minhokim42" target="_blank" rel="noopener noreferrer">
+      <a className="" href="https://twitter.com/minho42_" target="_blank" rel="noopener noreferrer">
         <div className="fixed right-0 bottom-0 bg-indigo-500 text-white no-underline text-sm px-2 py-1 rounded-tl-xl">
-          @minhokim42
+          @minho42_
         </div>
       </a>
 

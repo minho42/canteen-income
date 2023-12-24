@@ -2,7 +2,7 @@ import Head from "next/head";
 import data from "./../data/data.json";
 
 export default function Home() {
-  if (!data) return <div>Data loading failed</div>;
+  if (!data || data.length == 0) return <div className="text-center py-3">Data loading failed</div>;
 
   return (
     <div className="flex items-center justify-center">
@@ -12,9 +12,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <a className="" href="https://twitter.com/minho42_" target="_blank" rel="noopener noreferrer">
+      <a
+        className=""
+        href="https://github.com/minho42/canteen-income"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <div className="fixed right-0 bottom-0 bg-indigo-500 text-white no-underline text-sm px-2 py-1 rounded-tl-xl">
-          @minho42_
+          Github
         </div>
       </a>
 

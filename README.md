@@ -9,12 +9,13 @@ Steps to generate `data.json`
 
 - Change the csv file name from `2022-licensed-canteens.csv` to `data.csv`
 
-- Open the csv file 
+- Open the `data.csv` file 
   - Remove title from the top row 
   - Remove total income from the bottom row
+  - Add column name on top: name, income
 
 - Convert `data.csv` file to `data.json` with following command
   
   ```shell
-  node data/convert_csv_to_json.js`
+  node data/convert_csv_to_json.js
   ```

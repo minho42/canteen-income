@@ -9,7 +9,6 @@ export default function Home() {
       <Head>
         <title>NSW public school canteen income</title>
         <meta name="description" content="NSW public school canteen income" />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <a

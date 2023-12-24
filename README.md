@@ -7,7 +7,7 @@ Steps to generate `data.json`
 
 - Move the csv file into `/data`
 
-- Change the csv file name from `2021-licensed-canteens.csv` to `data.csv`
+- Change the csv file name from `2022-licensed-canteens.csv` to `data.csv`
 
 - Open the csv file 
   - Remove title from the top row 

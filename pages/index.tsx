@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <div className="flex items-center justify-center">
       <Head>
-        <title>NSW public school canteen income 2021</title>
-        <meta name="description" content="NSW public school canteen income 2021" />
+        <title>NSW public school canteen income</title>
+        <meta name="description" content="NSW public school canteen income" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -20,7 +20,7 @@ export default function Home() {
 
       <main className="max-w-xl mb-20 px-2">
         <div className="flex flex-col items-center justify-center py-3">
-          <h1 className="font-bold text-xl text-center">NSW public school canteen income (2021)</h1>
+          <h1 className="font-bold text-xl text-center">NSW public school canteen income (2022)</h1>
 
           <a
             className=""

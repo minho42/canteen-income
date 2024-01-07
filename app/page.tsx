@@ -1,5 +1,5 @@
-import data from "./../data/data.json"
 import type { Metadata } from "next"
+import data from "./../data/data.json"
 
 export const metadata: Metadata = {
   title: "NSW public school canteen income",
@@ -11,17 +11,6 @@ export default async function Page() {
 
   return (
     <div className="flex items-center justify-center">
-      <a
-        className=""
-        href="https://github.com/minho42/canteen-income"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <div className="fixed right-0 bottom-0 bg-indigo-500 text-white no-underline text-sm px-2 py-1 rounded-tl-xl">
-          Github
-        </div>
-      </a>
-
       <main className="max-w-xl mb-20 px-2">
         <div className="flex flex-col items-center justify-center py-3">
           <h1 className="font-bold text-xl text-center">NSW public school canteen income (2022)</h1>

@@ -1,16 +1,16 @@
-import Head from "next/head";
-import data from "./../data/data.json";
+import data from "./../data/data.json"
+import type { Metadata } from "next"
 
-export default function Home() {
-  if (!data || data.length == 0) return <div className="text-center py-3">Data loading failed</div>;
+export const metadata: Metadata = {
+  title: "NSW public school canteen income",
+  description: "NSW public school canteen income",
+}
+
+export default async function Page() {
+  if (!data || data.length == 0) return <div className="text-center py-3">Data loading failed</div>
 
   return (
     <div className="flex items-center justify-center">
-      <Head>
-        <title>NSW public school canteen income</title>
-        <meta name="description" content="NSW public school canteen income" />
-      </Head>
-
       <a
         className=""
         href="https://github.com/minho42/canteen-income"
@@ -40,15 +40,17 @@ export default function Home() {
               data.map((row, index) => (
                 <div className="flex items-center justify-between gap-2 py-1" key={index + 1}>
                   <div className="flex items-center justify-center py-3">
-                    <div className="font-medium text-center w-10 bg-gray-200">{index + 1}</div>
+                    <div className="font-medium text-center w-10">{index + 1}</div>
                   </div>
                   <div className="flex flex-wrap flex-shrink w-full font-semibold text-left ">{row.name}</div>
-                  <div className="text-right font-mono text-sm bg-indigo-100 p-1">{row.income}</div>
+                  <div className="text-right font-mono text-sm bg-indigo-100 rounded-md px-2 py-1">
+                    {row.income}
+                  </div>
                 </div>
               ))}
           </div>
         </article>
       </main>
     </div>
-  );
+  )
 }

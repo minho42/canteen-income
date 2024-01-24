@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-a {
-  @apply text-blue-600 underline;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
